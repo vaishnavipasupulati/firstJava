@@ -1,12 +1,16 @@
-
-  pipeline {
+pipeline {
     agent any
 
     stages {
         stage('Hello') {
-            steps {
-                echo 'Hello World'
+         node {
+             checkout scm
+             
+             sh 'javac HelloWorld.java'
+             sh 'java HelloWorld'
+         }
+
+
             }
         }
-    }
-}  
+    
