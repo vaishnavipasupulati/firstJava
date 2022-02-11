@@ -9,9 +9,10 @@ pipeline {
     }
     stage ('Build') {
       steps {
-            echo
-            "Hello World"
+        node {
+            echo "Hello World"
       }
+     }   
     }
   }
 }
