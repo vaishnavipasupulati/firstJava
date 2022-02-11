@@ -8,10 +8,8 @@ pipeline {
       }
     }
     stage ('Build') {
-      steps {
         node {
             echo "Hello World"
-      }
      }   
     }
   }
