@@ -9,8 +9,8 @@ pipeline {
     }
     stage ('Build') {
       steps {
-            javac HelloWorld.java
-            java HelloWorld
+            echo
+            "Hello World"
       }
     }
   }
