@@ -7,6 +7,12 @@ pipeline {
 
                 sh 'javac HelloWorld.java'
                 sh 'java HelloWorld'
+                sh '''#!/bin/sh
+
+echo "Hey folks"
+
+ls -la'''
+                
 
             }
         }
