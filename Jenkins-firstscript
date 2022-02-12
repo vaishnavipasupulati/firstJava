@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                checkout scm
+
+                sh 'javac JavaFirstLine.java'
+                sh 'java JavaFirstLine'
+                sh '''#!/bin/sh
+
+echo "New pipeline to build by Vaishnavi"
+
+ls -la'''
+                
+
+            }
+        }
+    }
+}
