@@ -10,6 +10,7 @@ pipeline {
                 sh '''#!/bin/sh
 
 echo "New pipeline to build by Vaishnavi"
+ls -la'''
 
                 
 
