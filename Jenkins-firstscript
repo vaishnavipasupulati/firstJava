@@ -9,7 +9,7 @@ pipeline {
                 sh 'java JavaFirstLine'
                 sh '''#!/bin/sh
 
-echo "New pipeline to build by Vaishnavi in firstjava"
+echo "New pipeline to build by Vaishnavi in firstjava repo"
 ls -la'''
 
                 
